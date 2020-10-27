@@ -40,6 +40,7 @@ export const query = graphql`
           name
           slug
           summary
+          country
           url
         }
       }

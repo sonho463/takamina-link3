@@ -9,7 +9,7 @@ export const SignupForm = () => {
             作った人　Son Hiroki Hong-su
           </h3>
           <p className="text-blue-800 font-medium text-base lg:text-lg pb-4 lg:pb-0">
-            このサイトはGatsbyという静的サイトジェネレーターのスターター　https://gatsby-airtable-listing.netlify.com/
+            このサイトはGatsbyという静的サイトジェネレーターの<a href="https://gatsby-airtable-listing.netlify.com/">スターター</a> 　
             を使って作りました。<br></br>
             また、Over40WebClubのpitangさんとyokoさんにも　たくさんの　ごきょうりょくを　してもらいました。<br></br>
             みなさんが、たのしく　ぱそこんの　べんきょうを　してくれますように！

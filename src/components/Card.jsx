@@ -7,7 +7,7 @@ import { Feature } from "."
 
 export const Card = props => {
   const {
-    country,
+    
     image: {
       localFiles: [cover],
     },
@@ -15,6 +15,7 @@ export const Card = props => {
     navigation,
     slug,
     summary,
+    country,
     url,
   } = props
 
@@ -31,13 +32,13 @@ export const Card = props => {
             {name}
           </h1>
           <p className="text-base text-blue-900 mb-5 font-medium">{summary}</p>
-          <Feature label="Country" value={country} />
+          <Feature label="しょうかいした人" value={country} />
         </div>
       </Link>
     </div>
     <div className="bg-white h-full shadow-sm rounded-md overflow-hidden hover:bg-blue-100">
       <div className="p-5 pb-1">
-        <Feature label="More info" value={url} />
+        <Feature label="サイトへ" value={url} />
       </div>
     </div>
     </div>

@@ -8,7 +8,7 @@ import { Layout } from "../layouts/Layout"
 export default props => {
   const { data, location } = props
   const {
-    country,
+    
     description,
     image: {
       localFiles: [cover],
@@ -16,6 +16,7 @@ export default props => {
     name,
     summary,
     tags,
+    country,
     url,
   } = data.item.data
   const navigation = location.state ? location.state.navigation : null
@@ -37,9 +38,9 @@ export default props => {
               <Img fluid={cover.childImageSharp.fluid} alt={name} />
             </div>
             <div className="w-full lg:w-2/5 lg:pl-4">
-              <Feature label="Country" value={country} />
-              <Feature label="What to see?" value={tags} />
-              <Feature label="More info" value={url} />
+              <Feature label="しょうかいした人" value={country} />
+              <Feature label="なんのべんきょう？" value={tags} />
+              <Feature label="サイトへ" value={url} />
               <p className="mt-4 whitespace-pre-line text-sm lg:text-base leading-normal text-blue-900">
                 {description}
               </p>
@@ -55,7 +56,7 @@ export const query = graphql`
   query SingleItemQuery($slug: String!) {
     item: airtable(data: { slug: { eq: $slug } }) {
       data {
-        country
+        
         description
         name
         image {
@@ -71,6 +72,7 @@ export const query = graphql`
         slug
         summary
         tags
+        country
         url
       }
     }
