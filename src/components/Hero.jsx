@@ -8,10 +8,10 @@ export const Hero = props => {
 
   return (
     <div className="container mt-12">
-      <div className="flex relative rounded-md overflow-hidden bg-blue-400">
+      <div className="flex relative rounded-md overflow-hidden bg-blue-200">
         <Img
           alt={title}
-          className="grayscale-1 blend-multiply"
+          // className="grayscale-1 blend-multiply"
           fadeIn={false}
           fixed={[
             { ...image.childImageSharp.desktop, media: `(min-width: 768px)` },

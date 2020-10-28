@@ -3,10 +3,10 @@ require("dotenv").config()
 module.exports = {
   siteMetadata: {
     links: {
-      contact: "mailto:contact@me.com",
-      facebook: "https://www.facebook.com",
-      linkedin: "https://www.linkedin.com",
-      twitter: "https://www.twitter.com",
+      contact: "mailto:son.ho463@gmail.com",
+      facebook: "https://www.facebook.com/horumont",
+      linkedin: "https://www.linkedin.com/in/%E5%BC%98%E6%A8%B9-%E5%AD%AB-61850b72/",
+      twitter: "https://twitter.com/horumont",
     },
     locale: "en",
     title: "Son Hiroki Hong-su",
@@ -68,7 +68,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#4299e1`,
         display: `standalone`,
-        icon: `src/images/icon.png`,
+        icon: `src/images/icon-son.png`,
       },
     },
     {

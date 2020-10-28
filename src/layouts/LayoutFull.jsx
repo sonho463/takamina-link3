@@ -8,7 +8,7 @@ export const LayoutFull = ({ children }) => {
       <header className="bg-white py-6">
         <div className="container text-center">
           <Link to="/" className="inline-block">
-            <img alt="Logo" src="/logo.svg" />
+            <img alt="Logo" src="/logo.png" />
           </Link>
         </div>
       </header>
