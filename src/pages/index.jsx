@@ -17,7 +17,7 @@ export default ({ data }) => {
         image={data.hero}
         tag="#study"
         title="パソコンのべんきょうのためのリンク"
-        description="たのしくまなべそうなサイトをあつめました。"
+        description="たのしくまなべそうなサイトをあつめました"
       />
 
       <Cards nodes={data.items.nodes} />
