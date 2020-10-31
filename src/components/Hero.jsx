@@ -62,7 +62,7 @@ export const query = graphql`
       mobile: fixed(width: 768, height: 240, quality: 80, cropFocus: CENTER) {
         ...GatsbyImageSharpFixed_withWebp
       }
-      desktop: fixed(width: 1248, height: 350, quality: 85, cropFocus: SOUTH) {
+      desktop: fixed(width: 1248, height: 500, quality: 85, cropFocus: SOUTH) {
         ...GatsbyImageSharpFixed_withWebp
       }
     }
