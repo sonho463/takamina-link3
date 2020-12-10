@@ -21,26 +21,26 @@ export const Card = props => {
 
   return (
     <div>
-    <div className="bg-white h-full shadow-sm rounded-md overflow-hidden hover:bg-blue-100">
-      <Link to={`/${slug}`} state={{ navigation }} asModal>
-      {/* <a href="{url}" state={{ navigation }}> */}
-        <div className="bg-blue-300">
-          <Img fluid={cover.childImageSharp.fluid} alt={name} />
-        </div>
-        <div className="p-5 pb-1">
-          <h1 className="text-2xl text-blue-500 font-bold leading-snug">
-            {name}
-          </h1>
-          <p className="text-base text-blue-900 mb-5 font-medium">{summary}</p>
-          <Feature label="しょうかいした人" value={country} />
-        </div>
-      </Link>
-    </div>
-    <div className="bg-white h-full shadow-sm rounded-md overflow-hidden hover:bg-blue-100">
-      <div className="p-5 pb-1">
-        <Feature label="サイトへ" value={url} />
+      <div className="bg-white h-full shadow-sm rounded-md overflow-hidden hover:bg-blue-100">
+        <Link to={`/${slug}`} state={{ navigation }} asModal>
+        {/* <a href="{url}" state={{ navigation }}> */}
+          <div className="bg-blue-300">
+            <Img fluid={cover.childImageSharp.fluid} alt={name} />
+          </div>
+          <div className="p-5 pb-1">
+            <h1 className="text-2xl text-blue-500 font-bold leading-snug">
+              {name}
+            </h1>
+            <p className="text-base text-blue-900 mb-5 font-medium">{summary}</p>
+            <Feature label="しょうかいした人" value={country} />
+          </div>
+        </Link>
       </div>
-    </div>
+      <div className="bg-white h-full shadow-sm rounded-md overflow-hidden hover:bg-blue-100">
+        <div className="p-5 pb-1">
+          <Feature label="サイトへ" value={url} />
+        </div>
+      </div>
     </div>
   )
 }
